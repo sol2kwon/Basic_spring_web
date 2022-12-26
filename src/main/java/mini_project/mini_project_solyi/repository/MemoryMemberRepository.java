@@ -1,9 +1,11 @@
 package mini_project.mini_project_solyi.repository;
 
 import mini_project.mini_project_solyi.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>(); //key는 long value는 member 저장
     private static long sequence = 0L;
