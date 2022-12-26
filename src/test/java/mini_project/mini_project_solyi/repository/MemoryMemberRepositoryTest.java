@@ -3,6 +3,8 @@ package mini_project.mini_project_solyi.repository;
 import mini_project.mini_project_solyi.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
