@@ -16,7 +16,9 @@ public class MemberController {
 
     @Autowired //service 연결
     public MemberController(MemberService memberService) {
+
         this.memberService = memberService;
+//        System.out.println("memberService -------->" + memberService.getClass()); 서비스 프록시 출력
     }
 
     @GetMapping("/members/new")

@@ -36,10 +36,10 @@ class MemberServiceIntegrationTest {
     public void joinException() {
         //given 어떤 상황이 주어져서
         Member member1 = new Member();
-        member1.setName("solyi");
+        member1.setName("권소미");
 
         Member member2 = new Member();
-        member2.setName("solyi");
+        member2.setName("권수리");
 
         //when 어떻게 했을때
         memberService.join(member1);
