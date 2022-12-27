@@ -31,12 +31,13 @@ public class JpaMemberRepository implements MemberRepository{
         List<Member> result = em.createQuery("select  m from Member m where m.name= :name", Member.class)
                 .setParameter("name",name)
                 .getResultList();
+
         return result.stream().findAny();
     }
 
     @Override
     public List<Member> findAll() {
-     return em.createQuery("select m from Member m",Member.class)
+     return em.createQuery("select m from Member m",Member.class)//jpql 객체를 대상으로 쿼리를 날림.
                .getResultList();
     }
 
